@@ -1,6 +1,5 @@
 package state
 
-type StateStore struct {
+type StateStore interface {
+	Name() string
 }
-
-func GetStore(name string)
